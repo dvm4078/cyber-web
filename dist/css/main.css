@@ -1,17 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,8 +88,17 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -30,16 +108,20 @@ body {
     font-style: normal;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: "";
     content: none;
 }
@@ -48,9 +130,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
+
 .w-1200 {
     max-width: 1230px;
     padding: 0 15px;
@@ -58,15 +142,18 @@ table {
     margin: auto;
     z-index: 5;
 }
-.header{
+
+.header {
     position: fixed;
     width: 100%;
     z-index: 5;
 }
-h1.rs{
+
+h1.rs {
     display: block;
 }
-.logo{
+
+.logo {
     background: url("../img/logo.png");
     width: 261px;
     height: 78px;
@@ -74,18 +161,21 @@ h1.rs{
     text-indent: -99em;
     display: block;
 }
-.navbar{
+
+.navbar {
     padding-top: 10px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     align-items: center;
 }
-.nav-link{
+
+.nav-link {
     display: block;
     color: #bababa;
     font-size: 25px;
@@ -94,10 +184,13 @@ h1.rs{
     font-weight: 500;
     position: relative;
 }
-.nav-link.active, .nav-link:hover{
+
+.nav-link.active,
+.nav-link:hover {
     color: #fff;
 }
-.nav-link.active:after{
+
+.nav-link.active:after {
     content: '';
     background: #fff;
     width: 100%;
@@ -106,12 +199,14 @@ h1.rs{
     left: 0;
     display: block;
 }
-.section{
+
+.section {
     width: 100%;
     height: 100vh;
 
 }
-.btn-header{
+
+.btn-header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +214,8 @@ h1.rs{
     right: 5%;
     top: 24px;
 }
-.btn-header a{
+
+.btn-header a {
     display: block;
     width: 30px;
     height: 31px;
@@ -127,13 +223,24 @@ h1.rs{
     margin: 0 10px;
     opacity: 0.8;
 }
-.btn-header a:hover{
+
+.btn-header a:hover {
     opacity: 1;
 }
-.youtube{background: url("../img/ico-1.png") 0 0 no-repeat}
-.telegram{background: url("../img/ico-2.png") 0 0 no-repeat}
-.twitter{background: url("../img/ico-3.png") 0 0 no-repeat}
-.hamburger{
+
+.youtube {
+    background: url("../img/ico-1.png") 0 0 no-repeat
+}
+
+.telegram {
+    background: url("../img/ico-2.png") 0 0 no-repeat
+}
+
+.twitter {
+    background: url("../img/ico-3.png") 0 0 no-repeat
+}
+
+.hamburger {
     display: none;
     cursor: pointer;
     position: fixed;
@@ -141,7 +248,7 @@ h1.rs{
     right: 30px;
 }
 
-.bar{
+.bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
@@ -149,7 +256,8 @@ h1.rs{
     transition: all 0.3s ease-in-out;
     background: white;
 }
-.bg-footer{
+
+.bg-footer {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -160,22 +268,26 @@ h1.rs{
     background: linear-gradient(0deg, #000, #000, #000, transparent);
     padding-top: 36px;
 }
-#section0{
+
+#section0 {
     background: url("../img/bg1.jpg") 50% 0 no-repeat;
     padding-top: 140px;
 }
-.section0 picture img{
+
+.section0 picture img {
     padding-bottom: 100px;
     display: block;
     margin: 0 auto;
 }
-.section0 .us-home{
+
+.section0 .us-home {
     margin: 0 auto;
     display: block;
     max-width: 100%;
     padding-bottom: 60px;
 }
-.btn-home{
+
+.btn-home {
     display: block;
     background: url("../img/btn_home.png") 0 0 no-repeat;
     width: 306px;
@@ -183,27 +295,32 @@ h1.rs{
     margin: 0 auto 15px;
     opacity: 0.8;
 }
-.txt-home{
+
+.txt-home {
     font-size: 18px;
     color: #fff;
     text-align: center;
 }
-.btn-home:hover{
+
+.btn-home:hover {
     opacity: 1;
 }
+
 /*#section1{*/
 /*    background: url("../img/bg1.jpg") 50% 0 no-repeat;*/
 /*}*/
-.section1 .fp-overflow{
+.section1 .fp-overflow {
     display: flex;
 }
-.box-section{
+
+.box-section {
     width: calc(100vw / 3);
     height: 100vh;
     background-size: cover;
     position: relative;
 }
-.box-section .box-layer{
+
+.box-section .box-layer {
     content: '';
     width: calc(100vw / 3);
     height: 100vh;
@@ -213,62 +330,79 @@ h1.rs{
     left: 0;
     top: 0;
 }
-.box-section:hover .box-layer{
+
+.box-section:hover .box-layer {
     opacity: 0;
 }
-.box-1{
+
+.box-1 {
     background: url("../img/bg2_1.jpg") 50% 0 no-repeat;
     padding-top: calc(100vh - 190px);
 }
-.box-2{
+
+.box-2 {
     background: url("../img/bg2_2.jpg") 50% 0 no-repeat;
     padding-top: calc(100vh - 243px);
 }
-.box-3{
+
+.box-3 {
     background: url("../img/bg2_3.jpg") 50% 0 no-repeat;
     padding-top: calc(100vh - 190px);
 }
-.box-footer{}
-.box-footer img, .box-intro img{
+
+.box-footer {}
+
+.box-footer img,
+.box-intro img {
     display: block;
     margin: 0 auto;
     max-width: 90%;
 }
-.box-footer p, .box-intro p{
+
+.box-footer p,
+.box-intro p {
     color: #fff;
     text-align: center;
     font-size: 17px;
     padding-top: 20px;
 }
-.box-intro{
+
+.box-intro {
     position: absolute;
     width: 100%;
     top: 220px;
 }
-.box-intro p{
+
+.box-intro p {
     padding-top: 80px;
 }
-#section2{
+
+#section2 {
     background: url("../img/bg3.jpg") 50% 0 no-repeat;
 }
-.box-partner{
+
+.box-partner {
     padding-top: 120px;
 }
-.box-partner img{
+
+.box-partner img {
     display: block;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
-#section3{
+
+#section3 {
     background: url("../img/bg5.jpg") 50% 0 no-repeat;
 }
-.section3 img{
+
+.section3 img {
     display: block;
     margin: 0 auto;
     padding-bottom: 25px;
 }
-.box-terms{
+
+.box-terms {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -284,7 +418,8 @@ h1.rs{
     text-align: center;
     font-size: 16px;
 }
-.fp-arrow-down{
+
+.fp-arrow-down {
     background: url("../img/arr_pre.png");
     width: 60px;
     height: 60px;
@@ -296,7 +431,8 @@ h1.rs{
     right: 50%;
     margin-right: -55px;
 }
-.fp-arrow-up{
+
+.fp-arrow-up {
     background: url("../img/arr_next.png");
     width: 60px;
     height: 60px;
@@ -308,13 +444,15 @@ h1.rs{
     left: 50%;
     margin-left: -55px;
 }
-.box-market{
+
+.box-market {
     background: url("../img/bg-market.jpg") 50% 0 no-repeat;
     background-size: cover !important;
     height: 100vh;
     position: relative;
 }
-.box-market:before{
+
+.box-market:before {
     content: 'coming soon';
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -331,7 +469,8 @@ h1.rs{
     justify-content: center;
     font-weight: 600;
 }
-.box-token{
+
+.box-token {
     background: url("../img/bg-token.jpg") 50% 0 no-repeat;
     background-size: cover !important;
     height: 100vh;
@@ -341,21 +480,24 @@ h1.rs{
     flex-direction: column;
     justify-content: center;
 }
-.box-token img{
+
+.box-token img {
     max-width: 90%;
     margin: 0 auto;
     width: 1000px;
     display: block;
     padding-bottom: 40px;
 }
-.box-token h3{
+
+.box-token h3 {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
 }
-.box-roadmap{
+
+.box-roadmap {
     background: url("../img/bg-roadmap.jpg") 50% 0 no-repeat;
     background-size: cover !important;
     height: 100vh;
@@ -365,12 +507,14 @@ h1.rs{
     flex-direction: column;
     justify-content: center;
 }
-.box-roadmap img{
+
+.box-roadmap img {
     display: block;
     margin: 0 auto;
     max-width: 90%;
 }
-.box-mint-nft{
+
+.box-mint-nft {
     background: url("../img/bg-roadmap.jpg") 50% 0 no-repeat;
     background-size: cover !important;
     height: 100vh;
@@ -380,13 +524,15 @@ h1.rs{
     flex-direction: column;
     justify-content: center;
 }
-.txt-mint img{
+
+.txt-mint img {
     display: block;
     margin: 0 auto;
     max-width: 70%;
     padding-bottom: 55px;
 }
-.box-main-nft{
+
+.box-main-nft {
     background: url("../img/bg-mint.png") 0 0 no-repeat;
     width: 706px;
     height: 330px;
@@ -394,13 +540,15 @@ h1.rs{
     margin: 0 auto;
     background-size: contain !important;
 }
-.box-main-nft img{
+
+.box-main-nft img {
     display: block;
     position: absolute;
     bottom: 13px;
     left: 10px;
 }
-.txt-count{
+
+.txt-count {
     font-size: 30px;
     position: absolute;
     color: #fff;
@@ -408,7 +556,8 @@ h1.rs{
     right: 83px;
     top: 170px;
 }
-.btn-mint{
+
+.btn-mint {
     background: url("../img/btn-mint.png") 0 0 no-repeat;
     width: 234px;
     height: 38px;
@@ -427,10 +576,42 @@ h1.rs{
     opacity: 0.8;
 
 }
-.btn-mint:hover{
+
+.btn-mint.disable {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: grayscale(100%);
+}
+
+.loading {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+    top: 4px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.btn-mint:hover {
     opacity: 1;
 }
-.box-list{
+
+.box-list {
     padding-top: 40px;
     display: flex;
     flex-direction: row;
@@ -438,35 +619,44 @@ h1.rs{
     flex-wrap: wrap;
     justify-content: center;
 }
-.box-list .nft{
+
+.box-list .nft {
     display: flex;
     width: 180px;
     height: 185px;
     background-size: cover !important;
     margin: 0 5px;
 }
-.nft-1{
+
+.nft-1 {
     background: url("../img/nft-1.png") 0 0 no-repeat;
 }
-.nft-2{
+
+.nft-2 {
     background: url("../img/nft-2.png") 0 0 no-repeat;
 }
-.nft-3{
+
+.nft-3 {
     background: url("../img/nft-3.png") 0 0 no-repeat;
 }
-.nft-4{
+
+.nft-4 {
     background: url("../img/nft-4.png") 0 0 no-repeat;
 }
-.nft-5{
+
+.nft-5 {
     background: url("../img/nft-5.png") 0 0 no-repeat;
 }
-.nft-6{
+
+.nft-6 {
     background: url("../img/nft-6.png") 0 0 no-repeat;
 }
-.nft-7{
+
+.nft-7 {
     background: url("../img/nft-7.png") 0 0 no-repeat;
 }
-.box-buy{
+
+.box-buy {
     background: url("../img/bg-buy.png") 0 0 no-repeat;
     width: 925px;
     height: 345px;
@@ -477,29 +667,34 @@ h1.rs{
     padding-top: 70px;
     padding-right: 35px;
 }
-.box-buy h3{
+
+.box-buy h3 {
     font-size: 30px;
     font-weight: 500;
     text-align: center;
 }
-.txt-info-buy{
+
+.txt-info-buy {
     text-align: right;
     font-size: 14px;
     font-weight: 500;
 }
-.box-process{
+
+.box-process {
     margin: 10px 0 32px;
     background: #fff;
     height: 12px;
     border-radius: 20px;
     position: relative;
 }
-.box-process-inner{
+
+.box-process-inner {
     background: #717070;
     height: 12px;
     border-radius: 20px;
 }
-.txt-process{
+
+.txt-process {
     position: absolute;
     bottom: -28px;
     font-size: 13px;
@@ -508,7 +703,8 @@ h1.rs{
     padding: 2px 8px;
     left: 200px;
 }
-.txt-process:before{
+
+.txt-process:before {
     content: '';
     width: 0;
     height: 0;
@@ -519,16 +715,19 @@ h1.rs{
     top: -5px;
     left: 24px;
 }
-.box-buy-inner{
+
+.box-buy-inner {
     padding: 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.box-buy-inner .btn-mint{
+
+.box-buy-inner .btn-mint {
     position: inherit;
 }
-.box-buy-inner input{
+
+.box-buy-inner input {
     display: block;
     height: 38px;
     padding: 0 15px;
@@ -539,33 +738,43 @@ h1.rs{
     margin-right: 10px;
     width: 234px;
 }
-.box-form label{
+
+.box-form label {
     display: block;
     font-size: 13px;
     margin-top: 10px;
 }
+
 @media (min-width: 890px) and (max-width: 1300px) {
-    .nft-6,.nft-7{
+
+    .nft-6,
+    .nft-7 {
         display: none !important;
     }
 }
-@media(max-width: 820px){
-    .bar{
+
+@media(max-width: 820px) {
+    .bar {
         display: block;
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
     }
-    .hamburger.active .bar:nth-child(2){
+
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: rotate(45deg) translateY(11.5px);
     }
-    .hamburger.active .bar:nth-child(3){
+
+    .hamburger.active .bar:nth-child(3) {
         transform: rotate(-45deg) translateY(-11.5px);
     }
-    .nav-menu{
+
+    .nav-menu {
         position: fixed;
         right: -100%;
         top: 70px;
@@ -577,102 +786,129 @@ h1.rs{
         height: calc(100vh - 88px);
         padding-top: 20px;
     }
-    .nav-item{
+
+    .nav-item {
         padding: 1.5rem 0;
         display: block;
         width: 100%;
         border-bottom: 1px solid #262626;
     }
-    .nav-item:first-child{
+
+    .nav-item:first-child {
         border-top: 1px solid #262626;
     }
-    .nav-menu.active{
+
+    .nav-menu.active {
         right: 0;
     }
-    .btn-header{
+
+    .btn-header {
         /*display: none;*/
         top: calc(100vh - 52px);
         right: -100%;
         transition: 0.3s;
     }
-    .btn-header.active{
+
+    .btn-header.active {
         right: 0;
         left: 0;
     }
-    .nav-link.active:after{
+
+    .nav-link.active:after {
         display: none;
     }
-    .section0 picture img{
+
+    .section0 picture img {
         max-width: 80%;
         padding-bottom: 40px;
     }
-    .section0 .us-home{
+
+    .section0 .us-home {
         max-width: 19%;
         padding-bottom: 30px;
     }
-    .box-section:hover .box-layer,.box-section .box-layer{
+
+    .box-section:hover .box-layer,
+    .box-section .box-layer {
         opacity: 0.5;
     }
-    .box-footer p{
+
+    .box-footer p {
         font-size: 14px;
         padding-top: 10px;
     }
+
     .box-2 {
         padding-top: calc(100vh - 211px);
     }
-    .box-intro{
+
+    .box-intro {
         width: 80vw;
         left: 50%;
         margin-left: -40vw;
         z-index: 2;
     }
-    .box-intro p{
+
+    .box-intro p {
         font-size: 16px;
         padding-top: 30px;
     }
-    .box-partner, #section0{
+
+    .box-partner,
+    #section0 {
         padding-top: 70px;
     }
-    #section3{
+
+    #section3 {
         padding-top: 100px;
     }
-    .box-terms{
+
+    .box-terms {
         padding-bottom: 70px;
     }
-    .box-market{
+
+    .box-market {
         background: url("../img/bg-market-mb.jpg") 50% 0 no-repeat;
     }
-    .box-token{
+
+    .box-token {
         background: url("../img/bg-token-mb.jpg") 50% 0 no-repeat;
         padding-top: 70px;
     }
-    .box-token img{
+
+    .box-token img {
         width: 450px;
         padding-bottom: 20px;
     }
-    .box-token h3{
+
+    .box-token h3 {
         font-size: 25px;
     }
-    .box-roadmap{
+
+    .box-roadmap {
         background: url("../img/bg-roadmap-mb.jpg") 50% 0 no-repeat;
         padding-top: 70px;
     }
-    .box-roadmap img{
+
+    .box-roadmap img {
         max-width: 420px;
         width: 90%;
     }
 
-    .txt-mint img{
+    .txt-mint img {
         padding-bottom: 30px;
     }
-    .box-list{
+
+    .box-list {
         padding-top: 20px;
     }
-    .box-list .nft{
+
+    .box-list .nft {
         width: 150px;
         height: 154px;
     }
-    .box-buy{
+
+    .box-buy {
         background: url("../img/bg-buy-mb.png") 50% 0 no-repeat;
         max-width: 642px;
         width: 100%;
@@ -682,7 +918,8 @@ h1.rs{
         padding-right: 0;
         background-size: 200px;
     }
-    .box-inner{
+
+    .box-inner {
         background: url("../img/rp.png") 0 0 repeat-y;
         max-width: 642px;
         width: 100%;
@@ -690,7 +927,8 @@ h1.rs{
         position: relative;
         background-size: contain !important;
     }
-    .rp-top{
+
+    .rp-top {
         background: url("../img/rp-top.png") 0 0 no-repeat;
         max-width: 642px;
         width: 100%;
@@ -700,7 +938,8 @@ h1.rs{
         left: 0px;
         background-size: cover;
     }
-    .rp-bot{
+
+    .rp-bot {
         background: url("../img/rp-bot.png") 0 0 no-repeat;
         max-width: 642px;
         width: 100%;
@@ -710,59 +949,72 @@ h1.rs{
         left: 0;
         background-size: cover;
     }
-    .box-buy h3{
+
+    .box-buy h3 {
         font-size: 25px;
     }
-    .box-buy-inner input{
+
+    .box-buy-inner input {
         /* width: 100px; */
     }
+
     .box-buy-inner {
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
-    .box-buy-inner .btn-mint{
+
+    .box-buy-inner .btn-mint {
         margin: 10px 0 0;
     }
-    .box-form label{
+
+    .box-form label {
         text-align: center;
     }
 }
 
-@media(max-width: 767px){
-    .box-list{
+@media(max-width: 767px) {
+    .box-list {
         max-width: 640px;
     }
-    .box-list .nft{
+
+    .box-list .nft {
         width: 100px;
         height: 103px;
     }
-    .box-list{
+
+    .box-list {
         padding-top: 20px;
     }
-    .nft-7{
+
+    .nft-7 {
         display: none !important;
     }
-    .box-main-nft img{
+
+    .box-main-nft img {
         width: 200px;
         bottom: inherit;
         top: -20px;
         left: 0;
     }
-    .box-main-nft{
+
+    .box-main-nft {
         width: 100%;
         height: 270px;
         max-width: 409px;
     }
-    .btn-mint{
+
+    .btn-mint {
         right: 50%;
         top: 220px;
         margin-right: -117px;
     }
-    .box-mint-nft{
+
+    .box-mint-nft {
         padding-top: 90px;
     }
-    .txt-count{
+
+    .txt-count {
         font-size: 25px;
         right: 33px;
         top: 105px;

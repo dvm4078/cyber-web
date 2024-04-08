@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAccount, useWriteContract } from 'wagmi';
+import { useAccount, useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
 // import { parseGwei } from 'viem'
 import { parseUnits, parseEther, parseGwei } from 'viem'
 
@@ -11,7 +11,11 @@ import abi from '../configs/abi';
 function BuyTokenPage() {
   const [amount, setAmount] = useState('');
   const account = useAccount()
-  const { data: hash, writeContract, writeContractAsync } = useWriteContract()
+  const { data: hash, writeContract, writeContractAsync, isPending } = useWriteContract()
+
+  const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
+    hash,
+  })
 
   const buy = () => {
     console.log('on here', amount);
@@ -65,10 +69,11 @@ function BuyTokenPage() {
               {account?.isConnected ? (
                 <a
                   onClick={buy}
-                  className="btn-mint"
+                  className={`btn-mint ${isPending ? 'disable' : ''}`}
                   style={{ cursor: 'pointer' }}
                 >
                   Buy Now
+                  {isConfirming && (<span className="loading" />)}
                 </a>
               ) : (
                 <ConnectorButton />)}

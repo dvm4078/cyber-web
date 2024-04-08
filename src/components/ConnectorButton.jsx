@@ -29,7 +29,7 @@ function ConnectorButton() {
     <a
       disabled={!ready}
       onClick={connectWallet}
-      className="btn-mint"
+      className={`btn-mint ${!ready ? 'disable' : ''}`}
       style={{ cursor: 'pointer' }}
     >
       Connect wallet
