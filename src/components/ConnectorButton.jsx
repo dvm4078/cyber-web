@@ -17,7 +17,7 @@ function ConnectorButton() {
   }, [connector, setReady]);
 
   const connectWallet = () => {
-    const targetChainId = import.meta.env.MODE === 'development' ? chains[0]?.id : chains[1]?.id;
+    const targetChainId = import.meta.env.VITE_NODE_ENV === 'development' ? chains[0]?.id : chains[1]?.id;
 
     connect({
       connector: connectors[0],

@@ -25,19 +25,14 @@ function Header() {
 
   return (
     <header className="header">
-      <h1 className="rs"><a href="#" className="logo">Logo</a></h1>
+      <h1 className="rs">
+        <Link to="/" className="logo">
+          Logo
+        </Link>
+        {/* <a href="#" className="logo">Logo</a> */}
+      </h1>
       <nav className="navbar">
         <ul className="nav-menu">
-          <li className="nav-item" onClick={onMenuClick}>
-            <Link to="/mint" className={`nav-link ${location.pathname === '/mint' && 'active'}`}>
-              Mint NFT
-            </Link>
-          </li>
-          <li className="nav-item" onClick={onMenuClick}>
-            <Link to="/market" className={`nav-link ${location.pathname === '/market' && 'active'}`}>
-              Marketplace
-            </Link>
-          </li>
           <li className="nav-item" onClick={onMenuClick}>
             <Link to="/" className={`nav-link ${location.pathname === '/' && 'active'}`}>
               Home
@@ -49,8 +44,23 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item" onClick={onMenuClick}>
+            <Link to="/mint" className={`nav-link ${location.pathname === '/mint' && 'active'}`}>
+              Mint NFT
+            </Link>
+          </li>
+          <li className="nav-item" onClick={onMenuClick}>
+            <Link to="/market" className={`nav-link ${location.pathname === '/market' && 'active'}`}>
+              Marketplace
+            </Link>
+          </li>
+          <li className="nav-item" onClick={onMenuClick}>
             <Link to="/tokenomic" className={`nav-link ${location.pathname === '/tokenomic' && 'active'}`}>
               Tokenomic
+            </Link>
+          </li>
+          <li className="nav-item" onClick={onMenuClick}>
+            <Link to="/roadmap" className={`nav-link ${location.pathname === '/roadmap' && 'active'}`}>
+              Roadmap
             </Link>
           </li>
         </ul>
@@ -61,8 +71,8 @@ function Header() {
         </div>
         <div className="btn-header">
           <a href="#" className="youtube"></a>
-          <a href="#" className="telegram"></a>
-          <a href="#" className="twitter"></a>
+          <a href="https://t.me/cyberneo_nft" target="_blank" className="telegram"></a>
+          <a href="twitter.com/PlayCyberNEO" target="_blank" className="twitter"></a>
         </div>
       </nav>
 
